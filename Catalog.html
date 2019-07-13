@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        function myFunction(){
+            var mbl = document.getElementById("mobile").value;
+            document.getElementById("cart-mobile").innerHTML = mbl;
+        }
+    </script>
+
+</head>
+<body>
+
+    <!--Catalog Section start-->
+
+    <div class="cat-container">
+        <div class="cat-name">Buy all at cheap rate <sup>[HOT]</sup></div>
+    
+        <div class="col-5">
+            <div class="product-image">
+                <a href="#"><img id="mobile" src="images/samsung-galaxy-a20.jpg" alt="Photo of Samsung phone"></a>
+            </div>
+            <div class="product-shop">
+                <div class="extra-info">
+                    <div class="product-rating">
+                        <div class="rating-box"></div>
+                    </div>
+                    <div class="product-name"><span id="mobileName">Samsung Galaxy A20 Smartphone</span></div>
+                    <div class="product-price">Tk. <span id="mobilePrice">15,990</span></div>
+                </div>
+                <div class="buy-now-wrapper">
+                    <button class="buy-now-button" type="button" title="Add to cart">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-5">
+            <div class="product-image">
+                <a href="#"><img src="images/xiaomi-mi-band-3-1.jpg" alt="watch"></a>
+            </div>
+            <div class="product-shop">
+                <div class="extra-info">
+                    <div class="product-rating">
+                        <div class="rating-box"></div>
+                    </div>
+                    <div class="product-name">Xiaomi Mi Band 3 - Smartwatch</div>
+                    <div class="product-price">Tk. 2,099</div>
+                </div>
+                <div class="buy-now-wrapper">
+                    <button class="buy-now-button" type="button" title="Add to cart">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-5">
+            <div class="product-image">
+                <a href="#"><img src="images/photoshop_23_9.jpg" alt=""></a>
+            </div>
+            <div class="product-shop">
+                <div class="extra-info">
+                    <div class="product-rating">
+                        <div class="rating-box"></div>
+                    </div>
+                    <div class="product-name">Asus X507LA 5th Gen Core i3..</div>
+                    <div class="product-price">Tk. 31,800</div>
+                </div>
+                <div class="buy-now-wrapper">
+                    <button class="buy-now-button" type="button" title="Add to cart">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-5">
+            <div class="product-image">
+                <a href="#"><img src="images/km-2378.jpg" alt=""></a>
+            </div>
+            <div class="product-shop">
+                <div class="extra-info">
+                    <div class="product-rating">
+                        <div class="rating-box"></div>
+                    </div>
+                    <div class="product-name">Kemei Km-2378 Professional Hair Dryer</div>
+                    <div class="product-price">Tk. 1,100</div>
+                </div>
+                <div class="buy-now-wrapper">
+                    <button class="buy-now-button" type="button" title="Add to cart">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-5">
+            <div class="product-image">
+                <a href="#"><img src="images/gamdias-hebe-e1-headsets-5.jpg" alt=""></a>
+            </div>
+            <div class="product-shop">
+                <div class="extra-info">
+                    <div class="product-rating">
+                        <div class="rating-box"></div>
+                    </div>
+                    <div class="product-name">Gamdias RGB wired Gaming Head..</div>
+                    <div class="product-price">Tk. 1,835</div>
+                </div>
+                <div class="buy-now-wrapper">
+                    <button class="buy-now-button" type="button" title="Add to cart">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Catalog Section End-->
+
+    <div class="cart-container">
+            <div class="cart">
+                <div class="page-title title-buttons">
+                    <h1><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="shopping-cart-header">Shopping Cart</span>
+                    </h1>
+                    <button class="checkout-btn" type="button" title="Proceed to Checkout">
+                        <span>Proceed to Checkout</span>
+                    </button>
+                </div>
+            </div>
+    
+            <form action="#" method="POST">
+                <fieldset>
+                    <table id="shopping-cart-table">
+                        <colgroup>
+                            <col style="width: 1%;">
+                            <col>
+                            <col style="width:1%;">
+                            <!--
+                            <col style="width:1%;">
+                            <col style="width:1%;">
+                            <col style="width:1%;">
+                            -->
+                        </colgroup>
+                        <thead>
+                            <tr class="header-row">
+                                <th rowspan="1"><span class="bullshit">Product Image</span></th>
+                                <th rowspan="1"><span>Product Name</span></th>
+                                <!--<th rowspan="1"></th> -->
+                                <th class="a-center" colspan="1"><span class="bullshit">Unit Price</span></th>
+                                <th class="a-center" rowspan="1"><span>Qty</span></th>
+                                <th colspan="1"><span>Subtotal</span></th>
+                                <!--<th class="a-center" colspan="1"></th>  -->
+                            </tr>
+                        </thead>
+    
+                        <tbody>
+                            <tr class="body-row">
+                                <td class="pr-image a-center"><a href="#" id="cart-mobile"><img src="images/samsung-galaxy-a20.jpg" alt="samsung mobile" width="75" height="75"></a></td>
+                                <td class="pr-name a-center">Samsung Galaxy A20</td>
+                                <td class="pr-price a-center">Tk.15,990</td>
+                                <td class="qty a-center"><input type="number"></td>
+                                <td class="subtotal a-center"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>JavaScript-Add to Cart</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function newFunction(){
+                var sq = document.getElementById("shirt").value;
+                var stotal = sq * 200;
+                document.getElementById("demo").innerHTML = sq;
+                document.getElementById("kemo").innerHTML = stotal;
+                var pq = document.getElementById("pants").value;
+                var ptotal = pq * 300;
+                document.getElementById("jemo").innerHTML = pq;
+                document.getElementById("vemo").innerHTML = ptotal;
+                var total = stotal + ptotal;
+                document.getElementById("tsum").innerHTML = total;
+            }
+        </script>
+
+        <style>
+            button {
+                text-align: center;
+                margin-left: 635px;
+                margin-top: 20px;
+                background-color: black;
+                color: #fff;
+                padding: 5px;
+                font-size: 20px;
+            }
+
+            h2 {
+                margin-left: 570px;
+                background-color: aqua;
+                margin-right: 540px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body align="center">
+        <table border="1" align="center">
+            <tr>
+                <td height="300" width="300">
+                    <img src="images/shirt.jpg" alt="men's shirt">
+                    <p>Price : 200 Tk</p>
+                    <p>Quantity : <input type="number" id="shirt"  name="shirtquantity"> Pcs</p>
+                </td>  
+                <td height="300" width="300">
+                    <img src='images/pants.jpg' alt="Women's pant">
+                    <p>Price : 300 Tk</p>
+                    <p>Quantity : <input type="number" id="pants" name="pantsquantity" size="1"> Pcs</p>
+                </td>  
+            </tr>
+        </table><br>
+        <button type="button" onclick="newFunction()">Add to Cart</button>
+        <br><br><br>
+        <hr>
+        <h2>CheckOut Your Cart</h2>
+        <table border="1" align="center" cellpadding="15">
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Shirt</td>
+                <td><p id="demo"></p></td>
+                <td>200</td>
+                <td><p id="kemo"></p></td>
+            </tr>
+            <tr>
+                <td>Pant</td>
+                <td><p id="jemo"></p></td>
+                <td>300</td>
+                <td><p id="vemo"></p></td>
+            </tr>
+            <tr>
+                <td colspan="2"><b> Net Payable : </b></td>
+                <td colspan="2"><b><p id="tsum"></p></b></td>
+            </tr>
+        </table>
+			
+    </body>
+</html>
